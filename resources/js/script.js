@@ -1,5 +1,12 @@
+$(window).on('load', function () {
+    $('.loader .inner').fadeOut(500, function () {
+        $('.loader').fadeOut(750);
+    });
+});
+
 // Eticky navigation bar
 $(document).ready(function() {
+
     $('.js--section-features').waypoint(function (direction) {
         
         console.log(direction);
